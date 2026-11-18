@@ -1,0 +1,87 @@
+{
+  "name": "Guardianes del Último Ecosistema",
+  "short_name": "Guardianes",
+  "description": "Videojuego educativo en 2D: restaura el río, el bosque y el lago de Michoacán y cuida tu propia granja.",
+  "lang": "es-MX",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./?origen=app",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f2e1b",
+  "theme_color": "#143d24",
+  "categories": [
+    "education",
+    "games",
+    "kids"
+  ],
+  "icons": [
+    {
+      "src": "img/iconos/icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/iconos/icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/iconos/icono-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/capturas/rio.webp",
+      "sizes": "1280x703",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Nivel del río: limpia la basura y salta entre las orillas"
+    },
+    {
+      "src": "img/capturas/granja.webp",
+      "sizes": "1280x703",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Tu granja en el valle de Tzintzun"
+    },
+    {
+      "src": "img/capturas/lago.webp",
+      "sizes": "1280x703",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "El lago de Pátzcuaro cubierto de lirio"
+    },
+    {
+      "src": "img/capturas/celular.webp",
+      "sizes": "780x1688",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "La página del juego en el celular"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Jugar ahora",
+      "short_name": "Jugar",
+      "url": "jugar/index.html",
+      "icons": [
+        {
+          "src": "img/iconos/icono-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Bitácora de especies",
+      "short_name": "Bitácora",
+      "url": "./#bitacora"
+    }
+  ]
+}

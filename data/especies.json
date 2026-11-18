@@ -1,0 +1,100 @@
+{
+  "acocil": {
+    "nombre": "Acocil",
+    "cientifico": "Cambarellus montezumae",
+    "zona": "rio",
+    "estado": "cuidado",
+    "dato": "Es un pequeño crustáceo de agua dulce, pariente del camarón. Solo vive en agua limpia: si hay acociles, el río está sano."
+  },
+  "garza": {
+    "nombre": "Garza blanca",
+    "cientifico": "Ardea alba",
+    "zona": "rio",
+    "estado": "seguro",
+    "dato": "Camina despacio en el agua poco profunda y atrapa peces con su pico largo. Si el río se ensucia, se queda sin comida."
+  },
+  "martin_pescador": {
+    "nombre": "Martín pescador",
+    "cientifico": "Megaceryle torquata",
+    "zona": "rio",
+    "estado": "seguro",
+    "dato": "Se lanza en picada al agua para pescar. Necesita agua clara para ver a los peces desde arriba."
+  },
+  "pez_rio": {
+    "nombre": "Pececillo de río",
+    "cientifico": "Familia Goodeidae",
+    "zona": "rio",
+    "estado": "peligro",
+    "dato": "En los ríos de Michoacán viven peces pequeños que no existen en ningún otro lugar del mundo. La contaminación los pone en peligro."
+  },
+  "monarca": {
+    "nombre": "Mariposa monarca",
+    "cientifico": "Danaus plexippus",
+    "zona": "bosque",
+    "estado": "peligro",
+    "dato": "Viaja miles de kilómetros desde Canadá para pasar el invierno en los bosques de oyamel de Michoacán. Sin esos bosques, no tiene dónde descansar."
+  },
+  "oyamel": {
+    "nombre": "Oyamel",
+    "cientifico": "Abies religiosa",
+    "zona": "bosque",
+    "estado": "cuidado",
+    "dato": "Crece en lo más alto de las montañas, donde hace frío y hay neblina. Sus ramas protegen a las mariposas monarca del frío."
+  },
+  "pino": {
+    "nombre": "Pino",
+    "cientifico": "Pinus sp.",
+    "zona": "bosque",
+    "estado": "seguro",
+    "dato": "México tiene más especies de pino que cualquier otro país. Sus raíces sostienen el suelo y evitan que la lluvia lo arrastre."
+  },
+  "encino": {
+    "nombre": "Encino",
+    "cientifico": "Quercus sp.",
+    "zona": "bosque",
+    "estado": "seguro",
+    "dato": "Crece en las partes más bajas y cálidas del bosque. Sus bellotas son alimento para venados, ardillas y aves."
+  },
+  "venado": {
+    "nombre": "Venado cola blanca",
+    "cientifico": "Odocoileus virginianus",
+    "zona": "bosque",
+    "estado": "seguro",
+    "dato": "Cuando siente peligro levanta la cola y muestra lo blanco para avisar a los demás venados. Necesita el bosque para esconderse y comer."
+  },
+  "carpintero": {
+    "nombre": "Pájaro carpintero",
+    "cientifico": "Melanerpes formicivorus",
+    "zona": "bosque",
+    "estado": "seguro",
+    "dato": "Hace agujeros en los troncos para guardar bellotas. Los huecos que deja sirven después de casa a otros animales."
+  },
+  "achoque": {
+    "nombre": "Achoque",
+    "cientifico": "Ambystoma dumerilii",
+    "zona": "lago",
+    "estado": "peligro",
+    "dato": "Es un ajolote que solo vive en el lago de Pátzcuaro. Puede regenerar partes de su cuerpo, pero no puede vivir en agua sucia."
+  },
+  "pato_mexicano": {
+    "nombre": "Pato mexicano",
+    "cientifico": "Anas diazi",
+    "zona": "lago",
+    "estado": "cuidado",
+    "dato": "Hace su nido entre el tule a la orilla del lago. Si se quita el tule, no tiene dónde cuidar a sus patitos."
+  },
+  "pescado_blanco": {
+    "nombre": "Pescado blanco",
+    "cientifico": "Chirostoma estor",
+    "zona": "lago",
+    "estado": "peligro",
+    "dato": "Es casi transparente y es símbolo de Pátzcuaro. Hoy quedan muy pocos porque el lago se ensució y se pescaron demasiados."
+  },
+  "tule": {
+    "nombre": "Tule",
+    "cientifico": "Schoenoplectus sp.",
+    "zona": "lago",
+    "estado": "seguro",
+    "dato": "Es una planta que crece en la orilla del agua y ayuda a limpiarla. Con él se tejen petates y canastas desde hace siglos."
+  }
+}

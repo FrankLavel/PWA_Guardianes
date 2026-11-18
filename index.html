@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Guardianes del Último Ecosistema</title>
+  <meta name="description" content="Videojuego educativo en 2D para niñas y niños de tercero de primaria: restaura el río, el bosque y el lago de Michoacán y cuida tu propia granja. Juega en el navegador, en Windows o en Android.">
+  <meta name="theme-color" content="#143d24">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="img/iconos/favicon.png">
+  <link rel="apple-touch-icon" href="img/iconos/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Guardianes">
+  <meta property="og:title" content="Guardianes del Último Ecosistema">
+  <meta property="og:description" content="Restaura el río, el bosque y el lago de Michoacán y cuida tu propia granja.">
+  <meta property="og:image" content="img/portada.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-gota" viewBox="0 0 24 24"><path d="M12 3s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11z"/><path d="M9.5 14.5a2.6 2.6 0 0 0 2.5 2.5"/></symbol>
+    <symbol id="i-arbol" viewBox="0 0 24 24"><path d="M12 2 5.5 10.5h3.5L5 16.5h14l-4-6h3.5z"/><path d="M12 16.5V22"/></symbol>
+    <symbol id="i-lago" viewBox="0 0 24 24"><path d="M2 16c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2"/><path d="M2 20.5c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2"/><path d="M12 11V5.5m0 3c0-2 1.8-3.5 4-3.5 0 2-1.8 3.5-4 3.5zm0 0c0-2-1.8-3.5-4-3.5 0 2 1.8 3.5 4 3.5z"/></symbol>
+    <symbol id="i-teclado" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2.5"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7.5 14h9"/></symbol>
+    <symbol id="i-celular" viewBox="0 0 24 24"><rect x="6.5" y="2" width="11" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+    <symbol id="i-navegador" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3.5" width="20" height="13.5" rx="2.5"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-joystick" viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.5"/><path d="M12 11v5"/><rect x="4" y="16" width="16" height="5" rx="2"/></symbol>
+    <symbol id="i-tocar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/></symbol>
+    <symbol id="i-atras" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+    <symbol id="i-guardar" viewBox="0 0 24 24"><path d="M5 3h11.5L20 6.5V21H5z"/><path d="M8.5 3v5h7V3M8.5 21v-7h8v7"/></symbol>
+    <symbol id="i-girar" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="11" rx="2.5"/><path d="M8 3.5c2.6-1.3 5.4-1.3 8 0m0 0-1.5-1.8M16 3.5l-2 .6"/></symbol>
+    <symbol id="i-jugar" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></symbol>
+    <symbol id="i-descargar" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 21h16"/></symbol>
+    <symbol id="i-sin-red" viewBox="0 0 24 24"><path d="M2 8.8a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M12 20h.01"/></symbol>
+  </svg>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="barra">
+    <nav class="contenedor" aria-label="Principal">
+      <a class="marca" href="#inicio"><img src="img/iconos/favicon.png" alt="" width="36" height="36">Guardianes</a>
+      <button class="boton-menu" aria-expanded="false" aria-controls="menu">Menú</button>
+      <ul class="menu" id="menu">
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#zonas">Zonas</a></li>
+        <li><a href="#granja">Granja</a></li>
+        <li><a href="#personajes">Personajes</a></li>
+        <li><a href="#bitacora">Bitácora</a></li>
+        <li><a href="#como-jugar">Cómo jugar</a></li>
+        <li><a href="#descargas">Descargas</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- ================================================================ Portada -->
+    <section class="portada" id="inicio">
+      <div class="contenedor">
+        <h1><img class="logo" src="img/logo.webp" width="900" height="366" alt="Guardianes del Último Ecosistema"></h1>
+        <p class="lema">Restaura el río, el bosque y el lago de Michoacán, conoce a los animales que viven ahí y cuida tu propia granja.</p>
+        <div class="acciones">
+          <a class="boton" href="jugar/index.html"><svg class="ico" aria-hidden="true"><use href="#i-jugar"/></svg>Jugar ahora</a>
+          <button class="boton secundario" id="instalar" hidden><svg class="ico" aria-hidden="true"><use href="#i-descargar"/></svg>Instalar la app</button>
+          <a class="boton claro" href="#historia">Conocer el juego</a>
+        </div>
+        <ul class="etiquetas" aria-label="Datos del juego">
+          <li>Aventura 2D en pixel art</li>
+          <li>Para 3.º de primaria</li>
+          <li>Hecho en Michoacán</li>
+          <li>Gratis</li>
+          <li>Navegador · Windows · Android</li>
+        </ul>
+        <p class="estado-red" id="estado-red" role="status"></p>
+      </div>
+    </section>
+
+    <!-- ================================================================ Historia -->
+    <section class="seccion papel" id="historia">
+      <div class="contenedor rejilla dos">
+        <div>
+          <p class="antetitulo">La historia</p>
+          <h2>El valle de Tzintzun te necesita</h2>
+          <p class="intro">El valle está en peligro y los animales ya no tienen dónde vivir. Tú eres quien lo va a cuidar: eliges si juegas con un guardián o una guardiana, le pones su nombre y empieza la aventura.</p>
+          <ul class="problemas">
+            <li><span class="icono rio"><svg class="ico" aria-hidden="true"><use href="#i-gota"/></svg></span><span><strong>El río Cupatitzio</strong> está lleno de basura y le llega agua sucia de una fábrica.</span></li>
+            <li><span class="icono bosque"><svg class="ico" aria-hidden="true"><use href="#i-arbol"/></svg></span><span><strong>El bosque de oyamel</strong> fue talado y las mariposas monarca no tienen dónde descansar.</span></li>
+            <li><span class="icono lago"><svg class="ico" aria-hidden="true"><use href="#i-lago"/></svg></span><span><strong>El lago de Pátzcuaro</strong> está cubierto de lirio y el achoque está a punto de desaparecer.</span></li>
+          </ul>
+          <p>Con la ayuda de Don Chucho, de Mari la mariposa y de Achi el achoque, recorres cada zona, resuelves acertijos y aprendes cómo cuidar el agua y a los seres vivos.</p>
+        </div>
+        <img class="captura-grande" src="img/capturas/noche.webp" width="1280" height="703" loading="lazy" alt="El valle de Tzintzun de noche, con la casa iluminada, los corrales y el tianguis">
+      </div>
+    </section>
+
+    <!-- ================================================================ Zonas -->
+    <section class="seccion papel-oscuro" id="zonas">
+      <div class="contenedor">
+        <p class="antetitulo">Tres zonas por restaurar</p>
+        <h2>Explora, salta y resuelve</h2>
+        <p class="intro">Desde el valle (vista aérea) entras a cada zona por su arco. Adentro el juego cambia a plataformas: corres, saltas, trepas y nadas para limpiar el lugar. Al final cada zona tiene un acertijo que enseña algo importante.</p>
+        <div class="rejilla tres">
+          <article class="tarjeta zona rio">
+            <img class="captura" src="img/capturas/zona_rio.webp" width="1280" height="720" loading="lazy" alt="Nivel del río: la guardiana camina por la orilla del río contaminado">
+            <div class="cuerpo">
+              <span class="etiqueta-zona">Zona 1</span>
+              <h3>Río Cupatitzio · El agua es vida</h3>
+              <p>Recoge la basura del río, conoce qué tarda en desaparecer cada cosa y arregla las compuertas para que el agua de la fábrica pase por la planta de tratamiento.</p>
+              <p class="reto"><strong>Acertijo:</strong> arma con Don Chucho un filtro de agua con grava, arena, algodón y carbón. Premio: aprendes a nadar.</p>
+            </div>
+          </article>
+          <article class="tarjeta zona bosque">
+            <img class="captura" src="img/capturas/zona_bosque.webp" width="1280" height="720" loading="lazy" alt="Nivel del bosque: tocones de árboles talados y tierra seca">
+            <div class="cuerpo">
+              <span class="etiqueta-zona">Zona 2</span>
+              <h3>Bosque de oyamel · Los árboles nos dan hogar</h3>
+              <p>Planta enredaderas para trepar, apaga fogatas mal apagadas, rescata a un venado y vuelve a sembrar cada árbol donde crece mejor.</p>
+              <p class="reto"><strong>Acertijo:</strong> con Mari, la mariposa, acomoda a cada animal en su hábitat. Premio: plantar enredaderas.</p>
+            </div>
+          </article>
+          <article class="tarjeta zona lago">
+            <img class="captura" src="img/capturas/zona_lago.webp" width="1280" height="720" loading="lazy" alt="Nivel del lago de Pátzcuaro con lirio sobre el agua">
+            <div class="cuerpo">
+              <span class="etiqueta-zona">Zona 3</span>
+              <h3>Lago de Pátzcuaro · El último achoque</h3>
+              <p>Quita el lirio que tapa la luz del sol, bucea para encontrar los huevos de achoque y arma la cadena alimenticia del lago.</p>
+              <p class="reto"><strong>Acertijo:</strong> con Achi, separa la basura para que no llegue al agua. Al terminar, el valle vuelve a la vida.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ Granja -->
+    <section class="seccion papel" id="granja">
+      <div class="contenedor rejilla dos">
+        <img class="captura-grande" src="img/capturas/granja_limpia.webp" width="1280" height="703" loading="lazy" alt="La granja en el valle: milpa, corrales con animales, talleres y caminos">
+        <div>
+          <p class="antetitulo">Después de salvar el valle</p>
+          <h2>Tu propia granja</h2>
+          <p class="intro">Cuando restauras las tres zonas aparece tu granja, y el valle sigue vivo: los días pasan, anochece y los animales te buscan cuando necesitan ayuda.</p>
+          <ul class="lista-check">
+            <li>Siembra la <strong>milpa</strong> (maíz, frijol y calabaza), riégala y ábonala.</li>
+            <li>Planta <strong>aguacates, guayabas y limones</strong> y velos crecer hasta dar fruto.</li>
+            <li>Cuida <strong>gallinas, vacas, cerdos, borregos y caballos</strong>, cada especie en su corral.</li>
+            <li>Muele nixtamal, haz queso y saca miel en los <strong>talleres</strong>, con minijuegos.</li>
+            <li>Cocina <strong>comida michoacana</strong>: corundas, tortillas, chongos zamoranos, guacamole y más.</li>
+            <li>Entrega pedidos en el <strong>tianguis</strong>, ayuda a los animales y decora el valle a tu gusto.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ Personajes -->
+    <section class="seccion papel-oscuro" id="personajes">
+      <div class="contenedor">
+        <p class="antetitulo">Personajes</p>
+        <h2>Quiénes te acompañan</h2>
+        <div class="rejilla cuatro">
+          <article class="tarjeta personaje">
+            <div class="pareja">
+              <img src="img/personajes/gara.webp" width="120" height="120" loading="lazy" alt="El guardián: niño de cabello negro con camisa verde y mochila">
+              <img src="img/personajes/nina.webp" width="120" height="120" loading="lazy" alt="La guardiana: niña de trenzas con camisa verde">
+            </div>
+            <div class="cuerpo"><p class="rol">Tú</p><h3>Guardián o guardiana</h3><p>Al empezar eliges con quién jugar y le pones tu nombre. Todos los diálogos se adaptan a tu elección.</p></div>
+          </article>
+          <article class="tarjeta personaje">
+            <img src="img/personajes/don_chucho.webp" width="150" height="150" loading="lazy" alt="Don Chucho: señor con sombrero de palma, bigote y paliacate">
+            <div class="cuerpo"><p class="rol">El río</p><h3>Don Chucho</h3><p>Pescador de toda la vida en el Cupatitzio. Te enseña a limpiar el agua y, al final, te ayuda con tu granja.</p></div>
+          </article>
+          <article class="tarjeta personaje">
+            <img src="img/personajes/mari.webp" width="150" height="150" loading="lazy" alt="Mari: mariposa monarca sonriente">
+            <div class="cuerpo"><p class="rol">El bosque</p><h3>Mari</h3><p>Una mariposa monarca que viajó miles de kilómetros para pasar el invierno en los oyameles.</p></div>
+          </article>
+          <article class="tarjeta personaje">
+            <img src="img/personajes/achi.webp" width="150" height="150" loading="lazy" alt="Achi: achoque, un ajolote rosado de branquias esponjadas">
+            <div class="cuerpo"><p class="rol">El lago</p><h3>Achi</h3><p>Un achoque, el ajolote que solo vive en el lago de Pátzcuaro. Necesita que salves sus huevos.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ Bitácora -->
+    <section class="seccion papel" id="bitacora">
+      <div class="contenedor">
+        <p class="antetitulo">La bitácora del guardián</p>
+        <h2>14 especies de Michoacán</h2>
+        <p class="intro">Mientras juegas descubres plantas y animales reales de la región. Cada uno queda en tu bitácora con su nombre científico, qué tanto peligro corre y un dato para conocerlo.</p>
+        <div class="filtros" role="group" aria-label="Filtrar por zona">
+          <button class="filtro" data-zona="todas" aria-pressed="true">Todas</button>
+          <button class="filtro" data-zona="rio" aria-pressed="false">Río</button>
+          <button class="filtro" data-zona="bosque" aria-pressed="false">Bosque</button>
+          <button class="filtro" data-zona="lago" aria-pressed="false">Lago</button>
+        </div>
+        <div class="especies" id="especies" aria-live="polite"></div>
+        <noscript><p>Activa JavaScript para ver la bitácora de especies.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ================================================================ Cómo jugar -->
+    <section class="seccion bosque" id="como-jugar">
+      <div class="contenedor">
+        <p class="antetitulo">Cómo se juega</p>
+        <h2>Controles</h2>
+        <p class="intro">El mismo juego se maneja con el teclado en la computadora o con controles en pantalla en el celular y la tableta.</p>
+        <div class="rejilla dos controles">
+          <div class="panel-madera"><div class="interior">
+            <h3 class="con-icono"><span class="insignia"><svg class="ico" aria-hidden="true"><use href="#i-teclado"/></svg></span>En computadora</h3>
+            <ul class="lista-teclas">
+              <li><span class="combo"><span class="grupo"><kbd aria-label="flecha izquierda">←</kbd><kbd aria-label="flecha arriba">↑</kbd><kbd aria-label="flecha abajo">↓</kbd><kbd aria-label="flecha derecha">→</kbd></span><span class="grupo"><span class="sep">o</span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></span><span class="accion">Caminar</span></li>
+              <li><span class="combo"><kbd class="ancha">Espacio</kbd></span><span class="accion">Saltar <small>(en las zonas)</small></span></li>
+              <li><span class="combo"><kbd>E</kbd></span><span class="accion">Hablar, recoger y entrar</span></li>
+              <li><span class="combo"><kbd class="ancha">Tab</kbd></span><span class="accion">Abrir la bitácora</span></li>
+              <li><span class="combo"><kbd>I</kbd></span><span class="accion">Abrir la mochila</span></li>
+              <li><span class="combo"><kbd>C</kbd></span><span class="accion">Decorar la granja</span></li>
+              <li><span class="combo"><kbd class="ancha">Esc</kbd></span><span class="accion">Pausa</span></li>
+            </ul>
+          </div></div>
+          <div class="panel-madera"><div class="interior">
+            <h3 class="con-icono"><span class="insignia"><svg class="ico" aria-hidden="true"><use href="#i-celular"/></svg></span>En celular o tableta</h3>
+            <ul class="lista-tactil">
+              <li><span class="mini"><svg class="ico" aria-hidden="true"><use href="#i-girar"/></svg></span><span><strong>Gira el dispositivo</strong> a lo horizontal para jugar en pantalla completa.</span></li>
+              <li><span class="mini"><svg class="ico" aria-hidden="true"><use href="#i-joystick"/></svg></span><span><strong>Joystick</strong> a la izquierda: aparece donde pongas el dedo y te mueve hacia donde lo deslices.</span></li>
+              <li><span class="mini"><svg class="ico" aria-hidden="true"><use href="#i-tocar"/></svg></span><span><strong>Botones</strong> a la derecha: saltar, interactuar (E), mochila, bitácora y pausa.</span></li>
+              <li><span class="mini"><svg class="ico" aria-hidden="true"><use href="#i-atras"/></svg></span><span><strong>Atrás</strong> de Android: cierra lo que tengas abierto o abre la pausa.</span></li>
+            </ul>
+            <p class="guardado"><svg class="ico" aria-hidden="true"><use href="#i-guardar"/></svg><span>Tu partida se guarda sola cada minuto, al pausar y al salir.</span></p>
+          </div></div>
+        </div>
+        <img class="captura-grande" style="margin-top:28px" src="img/capturas/minijuego.webp" width="1280" height="703" loading="lazy" alt="Minijuego de la cocina: preparar un platillo en el fogón">
+      </div>
+    </section>
+
+    <!-- ================================================================ Aprendizaje -->
+    <section class="seccion papel-oscuro" id="aprendizaje">
+      <div class="contenedor">
+        <p class="antetitulo">Para docentes y familias</p>
+        <h2>Qué se aprende jugando</h2>
+        <p class="intro">El juego está pensado para niñas y niños de tercero de primaria. Cada zona termina con lo que se aprendió, y la bitácora reúne los datos de las especies.</p>
+        <div class="rejilla dos" style="align-items:start">
+          <div class="rejilla">
+            <div class="objetivo"><span class="numero">1</span><p><strong>Qué es un ecosistema</strong> y cómo los seres vivos se relacionan con el agua, el suelo y el aire.</p></div>
+            <div class="objetivo"><span class="numero">2</span><p><strong>Cómo la contaminación del agua</strong> afecta a peces, plantas y a todos los que la beben.</p></div>
+            <div class="objetivo"><span class="numero">3</span><p><strong>Por qué proteger los hábitats:</strong> el bosque de oyamel, el lago y sus especies que solo viven aquí.</p></div>
+            <div class="objetivo"><span class="numero">4</span><p><strong>Conciencia ambiental:</strong> tirar la basura en su lugar, separarla, reciclar y cuidar los árboles.</p></div>
+          </div>
+          <div class="tarjeta"><div class="cuerpo">
+            <h3>Lo que el juego le dice al terminar cada zona</h3>
+            <ul class="aprende" style="columns:1">
+              <li>La basura en el agua daña a los peces, a las plantas y a todos los que la beben.</li>
+              <li>Cuando el agua está limpia, los seres vivos pueden volver a vivir ahí.</li>
+              <li>Los árboles son hogar y alimento de muchos seres vivos; cada uno crece mejor en su lugar.</li>
+              <li>Una fogata mal apagada puede destruir un bosque entero.</li>
+              <li>En un ecosistema todo está conectado: si falta un eslabón de la cadena alimenticia, todos lo sienten.</li>
+              <li>Las plantas invasoras como el lirio tapan la luz y dañan el lago.</li>
+              <li>El achoque solo vive en Pátzcuaro: si desaparece de ahí, desaparece del mundo.</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ Descargas -->
+    <section class="seccion papel" id="descargas">
+      <div class="contenedor">
+        <p class="antetitulo">Juega donde quieras</p>
+        <h2>Descargas</h2>
+        <p class="intro">Versión <strong>1.0.0-rc3</strong>. Las tres versiones son el mismo juego.</p>
+        <div class="rejilla tres">
+          <article class="tarjeta"><div class="cuerpo descarga">
+            <h3 class="con-icono"><span class="insignia"><svg class="ico" aria-hidden="true"><use href="#i-navegador"/></svg></span>En el navegador</h3>
+            <p>Sin instalar nada. Funciona en Chrome, Edge y Firefox, en computadora y en celular.</p>
+            <p class="peso">Primera carga: unos 85 MB.</p>
+            <a class="boton" href="jugar/index.html">Jugar ahora</a>
+          </div></article>
+          <article class="tarjeta"><div class="cuerpo descarga">
+            <h3 class="con-icono"><span class="insignia"><svg class="ico" aria-hidden="true"><use href="#i-monitor"/></svg></span>Windows</h3>
+            <p>Para Windows 10 y 11. Descomprime el archivo y abre <em>GuardianesDelUltimoEcosistema.exe</em>.</p>
+            <p class="peso">Archivo .zip de 84 MB.</p>
+            <a class="boton" href="descargas/GuardianesDelUltimoEcosistema_windows_1.0.0-rc3.zip" download>Descargar</a>
+          </div></article>
+          <article class="tarjeta"><div class="cuerpo descarga">
+            <h3 class="con-icono"><span class="insignia"><svg class="ico" aria-hidden="true"><use href="#i-celular"/></svg></span>Android</h3>
+            <p>Para Android 7 o más nuevo. Abre el archivo en el teléfono y permite instalar apps de esa fuente.</p>
+            <p class="peso">Archivo .apk de 98 MB.</p>
+            <a class="boton" href="descargas/GuardianesDelUltimoEcosistema_android_1.0.0-rc3.apk" download>Descargar</a>
+          </div></article>
+        </div>
+        <div class="panel-madera" style="margin-top:28px"><div class="interior">
+          <h3 class="con-icono"><span class="insignia"><svg class="ico" aria-hidden="true"><use href="#i-sin-red"/></svg></span>Jugar sin internet</h3>
+          <p>Instala esta página como app (botón <strong>Instalar la app</strong> arriba, o en el menú del navegador → <em>Instalar</em> / <em>Agregar a pantalla de inicio</em>) y guarda el juego en tu dispositivo. Después podrás abrirlo aunque no tengas conexión.</p>
+          <div class="progreso" aria-hidden="true"><span id="barra-offline"></span></div>
+          <p class="nota" id="texto-offline" role="status" style="margin:10px 0 14px">El juego todavía no está guardado en este dispositivo.</p>
+          <button class="boton secundario" id="guardar-offline">Guardar el juego en este dispositivo</button>
+        </div></div>
+      </div>
+    </section>
+
+    <!-- ================================================================ Equipo -->
+    <section class="seccion bosque" id="equipo">
+      <div class="contenedor">
+        <p class="antetitulo">Equipo de desarrollo</p>
+        <h2>Quiénes hicimos el juego</h2>
+        <p class="intro">Somos estudiantes de Ingeniería en Desarrollo y Gestión de Software de la Universidad Tecnológica de Oriente de Michoacán. Este juego es nuestro proyecto de la materia <em>Gestión del proceso de desarrollo de software</em>, trabajado con prácticas DevOps.</p>
+        <div class="equipo">
+          <article class="tarjeta miembro">
+            <div class="avatar"><img src="img/equipo/diego.jpg" alt="Foto de Diego Arellano Bautista" data-iniciales="DA" width="128" height="128"></div>
+            <h3>Diego Arellano Bautista</h3>
+            <ul class="roles"><li>Automation Architect</li><li>Security Engineer</li></ul>
+            <p class="aporta">Diseña la automatización del proceso (pruebas y armado de las versiones) y cuida la seguridad de las entregas.</p>
+          </article>
+          <article class="tarjeta miembro">
+            <div class="avatar"><img src="img/equipo/ignacio.jpg" alt="Foto de Ignacio Emiliano Santoyo Gonzales" data-iniciales="IS" width="128" height="128"></div>
+            <h3>Ignacio Emiliano Santoyo Gonzales</h3>
+            <ul class="roles"><li>Developer</li><li>Utility Technology Player</li></ul>
+            <p class="aporta">Programa y mejora las funciones del juego y apoya al equipo en las tareas técnicas donde se necesite.</p>
+          </article>
+          <article class="tarjeta miembro">
+            <div class="avatar"><img src="img/equipo/francisco.jpg" alt="Foto de Francisco Gabriel Lazo Velázquez" data-iniciales="FL" width="128" height="128"></div>
+            <h3>Francisco Gabriel Lazo Velázquez</h3>
+            <ul class="roles"><li>DevOps Evangelist</li><li>Release Manager</li><li>Experience Assurance Professional</li></ul>
+            <p class="aporta">Promueve la cultura DevOps, organiza las entregas de cada versión y valida la calidad y la experiencia del juego.</p>
+          </article>
+        </div>
+        <div class="tarjeta asesor"><div class="cuerpo">
+          <p class="rol" style="color:var(--hoja-500);font-weight:800;margin:0">Asesor</p>
+          <h3 style="margin:4px 0">Ing. Uriel Cambrón Hernández</h3>
+          <p style="margin:0">Gestión de Proyectos de Software · UTOM2306IDGS</p>
+        </div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <strong>Guardianes del Último Ecosistema</strong><br>
+        Videojuego educativo · versión 1.0.0-rc3<br>
+        Universidad Tecnológica de Oriente de Michoacán, 2026.
+      </div>
+      <div>
+        Hecho con <a href="https://godotengine.org" rel="noopener">Godot 4</a>. Ilustraciones y personajes generados con IA y dirigidos por el equipo.
+      </div>
+      <div>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="aviso" id="aviso-ios" hidden role="dialog" aria-labelledby="titulo-ios">
+    <strong id="titulo-ios">Instalar en iPhone o iPad</strong>
+    <p style="margin:6px 0 0">Toca el botón <strong>Compartir</strong> de Safari y luego <strong>Agregar a pantalla de inicio</strong>.</p>
+    <button class="boton claro" id="cerrar-ios">Entendido</button>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
